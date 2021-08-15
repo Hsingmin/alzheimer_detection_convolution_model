@@ -1,4 +1,4 @@
-# alzheimer_detection_convolution_model
+# Alzheimer Detection Convolution Model
 A convolution network model for alzheimer detection.
 Alzheimer's is a type of dementia that affects memory, thinking and behavior. Symptoms eventually grow severe enough to interfere with daily tasks. Alzheimer's is the most common cause of dementia. Alzheimer's disease accounts for 60-80% of dementia cases.
 
