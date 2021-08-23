@@ -7,7 +7,7 @@ dist
 build
 
 # sample
-sample.png
+*.png
 
 # Directory
 __pycache__
