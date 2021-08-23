@@ -1,0 +1,15 @@
+# Python
+*.py[cod]
+*.so
+*.egg
+*.egg-info
+dist
+build
+
+# sample
+sample.png
+
+# Directory
+__pycache__
+dataset/
+pre_model/
