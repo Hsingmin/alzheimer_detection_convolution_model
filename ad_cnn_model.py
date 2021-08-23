@@ -11,7 +11,7 @@ import os
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, Dropout, Flatten, Conv2D, MaxPooling2D, Input
 
-base_dir = "../input/alzheimers-dataset-4-class-of-images/Alzheimer_s Dataset/"
+base_dir = "./dataset/"
 
 
 def preprocess_data(base_dir):
@@ -100,7 +100,7 @@ def convolution_model():
     return model
 
 
-def run_model(model, train_data, validation_data, test_data):
+def run_model(model, train_data, val_data, test_data):
     history = model.fit(train_data, validation_data=val_data, epochs=50)
 
     model.evaluate(test_data)
@@ -146,7 +146,7 @@ def run_model(model, train_data, validation_data, test_data):
                 val_data.class_names[labels[i]]))
 
 
-if __name__ = "__main__":
+if __name__ == "__main__":
     train_data, validation_data, test_data = preprocess_data(base_dir)
     model = convolution_model()
     run_model(model, train_data, validation_data, test_data)
